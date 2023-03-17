@@ -20,7 +20,6 @@ const getComments = async () => {
     }
 }
 
-
 function createComments(comment) {
     return `
            <div class="wrapper_comment">
@@ -30,7 +29,6 @@ function createComments(comment) {
            </div>
   `
 }
-
 
 const commentsDiv = document.querySelector('.comments')
 const divPosts = document.querySelector('.posts')

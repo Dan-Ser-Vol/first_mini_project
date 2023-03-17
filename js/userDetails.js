@@ -18,12 +18,12 @@ divDetail.innerText = ''
 
 const urlPosts = `https://jsonplaceholder.typicode.com/users/${user.id}/posts`
 const getPosts = async () => {
-try {
-    const res = await fetch(urlPosts)
-    return await res.json()
-}catch (error) {
-    console.log('Error:', error);
-}
+    try {
+        const res = await fetch(urlPosts)
+        return await res.json()
+    } catch (error) {
+        console.log('Error:', error);
+    }
 }
 
 let status = false
