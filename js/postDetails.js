@@ -23,9 +23,9 @@ const getComments = async () => {
 function createComments(comment) {
     return `
            <div class="wrapper_comment">
-               <div class="postInfoItem">Name: ${comment.name}</div>
-               <div class="postInfoItem">Email: ${comment.email}</div>
-               <div class="postInfoItem">Body: ${comment.body}</div>
+               <div class="post_info-item">Name: ${comment.name}</div>
+               <div class="post_info-item">Email: ${comment.email}</div>
+               <div class="post_info-item">Body: ${comment.body}</div>
            </div>
   `
 }
@@ -55,10 +55,10 @@ getComments().then((comments) => {
 
 
 divPosts.innerHTML = `
-     <div class="postInfoItem">User Id: ${post.userId}</div>
-     <div class="postInfoItem">Id: ${post.id}</div>
-     <div class="postInfoItem">Title: ${post.title}</div>
-     <div class="postInfoItem">Body: ${post.body}</div>
+     <div class="comment_info-item">User Id: ${post.userId}</div>
+     <div class="comment_info-item">Id: ${post.id}</div>
+     <div class="comment_info-item">Title: ${post.title}</div>
+     <div class="comment_info-item">Body: ${post.body}</div>
      `
 
 divPosts.append(btnComments)
